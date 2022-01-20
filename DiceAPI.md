@@ -43,3 +43,26 @@ This is a Dice class for dice games. Dice holds the number of dots. The number o
 #### **maximumValue**
 
 - returns the maximum number of the dots of the dice
+
+# Test cases for Dice class
+
+## Constructor
+
+- upperbound is an integer
+
+  new Dice('s') throw Error
+  new Dice(2.5) throw Error
+
+  new Dice(2) creates Dice with upper bound 2
+  new Dice() creates Dice with upper bound 6
+  new Dice(12) creates Dice with upper bound 12
+  new Dice(6) creates Dice with upper bound 6
+  new Dice(20) creates Dice with upper bound 20
+
+  check that dot count is set to 0
+
+  newDice(21) throws too big
+  newDice(200) throws too big
+
+  new Dice(-4) throws too small
+  new Dice(1) throws too small
